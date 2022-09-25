@@ -17,10 +17,7 @@ h3,
 h4,
 h5,
 h6,
-p {
-  margin: 0;
-  padding-left: 0;
-}
+p,
 ul {
   margin: 0;
   padding-left: 0;
@@ -33,7 +30,6 @@ img {
 .list {
   list-style: none;
 }
-
 .link {
   text-decoration: none;
 }
@@ -41,7 +37,6 @@ img {
 .link:focus {
   color: var(--active-link-color);
 }
-
 .btn {
   display: block;
   font-family: inherit;
