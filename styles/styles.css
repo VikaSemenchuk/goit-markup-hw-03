@@ -1,5 +1,4 @@
 /*----------------colors------------------*/
-
 :root {
   --main-color: #212121;
   --main-background-color: #ffffff;
@@ -17,111 +16,142 @@
   --hero-footer-background-color: #2f303a;
   --border-color: #ececec;
   --team-background-color: #f5f4fa;
+  --gap: 30px;
 }
 
 body {
+  color: var(--main-color);
+
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+
   background-color: var(--main-background-color);
-}
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 }
 
 /*------------------------header-------------------*/
-.header-container {
+
+.header > .container {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--border-color);
 }
+
 .header-logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: var(--logo-color);
+
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--logo-color);
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
+
 .header-logo > span {
   color: var(--studio-header-color);
 }
+
 .header-nav {
   display: flex;
   align-items: center;
 }
+
 .nav-list,
 .header-list-contacts {
   display: flex;
   align-items: center;
+
   gap: 50px;
 }
-.header-contacts {
+
+.container-contacts {
   display: flex;
   align-items: center;
+
   margin-left: auto;
 }
+
 .nav-link,
 .contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-color);
+
   font-weight: 500;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  color: var(--main-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
+
 .current {
   color: var(--active-link-color);
 }
+
 .contact-link {
   color: var(--text-color);
 }
+
 /*--------------hero---------------*/
+
 .hero {
   background-color: var(--hero-footer-background-color);
 }
+
 .hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero-title {
+  text-align: center;
+
   margin: 0 auto;
   margin-bottom: 30px;
+
   max-width: 696px;
+
+  color: var(--hero-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+
   text-transform: uppercase;
-  color: var(--hero-color);
 }
+
 .hero-btn {
   margin: 0 auto;
-  background-color: var(--active-btn-background-color);
+
+  border-radius: 4px;
+  border: none;
+
+  min-width: 216px;
+  height: 50px;
+
+  color: var(--hero-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  min-width: 216px;
-  height: 50px;
   letter-spacing: 0.06em;
-  color: var(--hero-color);
-  border-radius: 4px;
+
+  background-color: var(--active-btn-background-color);
 }
 .hero-btn:active {
   background-color: var(--hero-btn-activ-background-color);
 }
 /*-----------Features--------------*/
 .features-title {
-  line-height: 1.33;
-  text-transform: uppercase;
   margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.33;
+
+  text-transform: uppercase;
 }
 .features-list,
 .team-list {
@@ -130,12 +160,13 @@ body {
 }
 
 .features-text {
-  line-height: 1.71;
   color: var(--text-color);
+
+  line-height: 1.71;
 }
 /*-----------gallery------------*/
-.gallery-container {
-  padding-bottom: 94px;
+.gallery.section {
+  padding-top: 0;
 }
 .gallery-list {
   display: flex;
@@ -145,102 +176,155 @@ body {
 .team {
   background-color: var(--team-background-color);
 }
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .team-name {
+  text-align: center;
+
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
-  margin-bottom: 10px;
 }
+
 .team-item-text {
+  text-align: center;
+
+  color: var(--text-color);
+
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
-  color: var(--text-color);
 }
+
 /*------------footer----------*/
+
 .footer {
   background-color: var(--hero-footer-background-color);
 }
+
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-logo {
+  color: var(--logo-color);
+
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--logo-color);
 }
+
 .footer-logo > span {
   color: var(--studio-footer-color);
 }
+
 .footer-address {
   margin-top: 20px;
 }
-.footer-item {
+
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .footer-contacts {
-  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+
   font-style: normal;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
 }
+
 .address {
   color: var(--studio-footer-color);
 }
+
 /*--------------portfolio------------*/
+
 .filter-list {
   display: flex;
 }
+
 .filter-content {
   display: flex;
+
   margin: 0 auto;
-  gap: 8px;
   margin-bottom: 34px;
+  gap: 8px;
 }
+
 .filter-btn {
+  text-align: center;
+
+  padding: 6px 22px;
+
+  border-radius: 4px;
+  border-color: transparent;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
-  padding: 6px 22px;
+
   background-color: #f5f4fa;
-  border-radius: 4px;
-  border-color: transparent;
 }
+
 .filter-btn.btn.active {
   background-color: var(--active-btn-background-color);
   color: var(--active-btn-color);
 }
-.portfolio-cards {
+
+.portfolio-link {
+  margin: 0;
+
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.88;
+
+  text-decoration: none;
+}
+
+.portfolio-cards-list {
   display: flex;
-  margin: 0 auto;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
+
+  margin-top: calc(-1 * var(--gap));
+  margin-left: calc(-1 * var(--gap));
 }
 
 .portfolio-gallery-title {
+  margin-bottom: 4px;
+
+  color: var(--main-color);
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-bottom: 4px;
 }
+
 .portfolio-gallery-item {
-  border: 1px solid #eeeeee;
+  margin-top: var(--gap);
+  margin-left: var(--gap);
+
+  flex-basis: calc(100% / 3 - var(--gap));
 }
+
 .cards-content {
   padding: 20px 24px;
-}
-.portfolio-gallery-text {
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--text-color);
+
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
