@@ -97,12 +97,9 @@ body {
 /*--------------hero---------------*/
 
 .hero {
-  background-color: var(--hero-footer-background-color);
-}
+  padding: 200px 0;
 
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-color: var(--hero-footer-background-color);
 }
 
 .hero-title {
@@ -215,12 +212,9 @@ body {
 /*------------footer----------*/
 
 .footer {
-  background-color: var(--hero-footer-background-color);
-}
+  padding: 60px 0;
 
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-color: var(--hero-footer-background-color);
 }
 
 .footer-logo {
@@ -268,14 +262,6 @@ body {
   gap: 8px;
 }
 
-/* .filter-content {
-  display: flex;
-
-  margin: 0 auto;
-  margin-bottom: 34px;
-  gap: 8px;
-} */
-
 .filter-btn {
   display: block;
 
@@ -320,7 +306,7 @@ body {
   margin-left: calc(-1 * var(--gap));
 }
 
-.portfolio-gallery-title {
+.portfolio-cards-title {
   margin-bottom: 4px;
 
   color: var(--main-color);
@@ -330,7 +316,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.portfolio-gallery-item {
+.portfolio-cards-item {
   margin-top: var(--gap);
   margin-left: var(--gap);
 

@@ -45,27 +45,29 @@ img {
 .btn:hover,
 .btn:focus,
 .btn:active {
-  background-color: var(--active-btn-background-color);
+  text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--active-btn-color);
+  background-color: var(--active-btn-background-color);
 }
 .section-title {
+  margin-bottom: 50px;
+
+  text-align: center;
+
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
